@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de Layouts en HTML</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        section { margin: 20px; padding: 20px; border: 1px solid #000; }
+        .container { width: 100%; padding: 20px; text-align: center; }
+        .flex-container { display: flex; }
+        .sidebar { width: 30%; background: #c72323; padding: 20px; }
+        .content { width: 70%; padding: 20px; background:rgb(165, 79, 42);}
+        .three-columns { display: flex; background:blueviolet; }
+        .col { flex: 1; padding: 20px; border: 1px solid #269010; }
+        .grid-container { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+        .grid-item { background: #eaff06; padding: 20px; text-align: center; }
+        .header, .footer { background: #1da836; color: white; padding: 20px; text-align: center; }
+        .contenido { width: 70%; padding: 20px; background:rgb(42, 136, 165); }
+    </style>
+</head>
+<body>
+    <section>
+        <h2>Layout de una sola columna</h2>
+        <div class="container">Contenido en una sola columna</div>
+    </section>
+    
+    <section>
+        <h2>Layout de dos columnas</h2>
+        <div class="flex-container">
+            <div class="sidebar">Barra lateral</div>
+            <div class="content">Contenido </div>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Layout de tres columnas</h2>
+        <div class="three-columns">
+            <div class="col">Columna 1</div>
+            <div class="col">Columna 2</div>
+            <div class="col">Columna 3</div>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Layout en cuadrícula (Grid)</h2>
+        <div class="grid-container">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Encabezado, Contenido y Pie de Página</h2>
+        <div class="header">Encabezado</div>
+        <div class="contenido">Contenido principal</div>
+        <div class="footer">Pie de Página</div>
+    </section>
+</body>
+</html>
+
+
